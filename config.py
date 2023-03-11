@@ -31,17 +31,17 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '5422153027')
+    ADMIN = os.environ.get("ADMINS", '1486460019')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", '29086176'))
-    API_HASH = os.environ.get("API_HASH", "d8825825375f883ceb201f2ab1459ba2")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5881252060:AAHZLpKPOniTusZx0pTWHL5QaADt7hbUQKQ")     
-    SESSION = os.environ.get("SESSION_STRING", "1BJWap1wBu6UcFhwernMYHkK7bqyOt88vpD9GpdIhwd9Zl941MKAp7ozGXEpWiyeVH3crs-xuJ-mJSN5-NrKAM-ojjedeLbQthUSQkwx9Tm6eHf_TR_GdL5mJk9NZuifVr2VfuZjp1RRGyd8EBYKMG8clR8rl9_CFM_sAQIt5JpoDlSb4HST15byA9aLYMD3LPIgkdMyAmBaiPFbl_77ocOYISTGy3b5v0EO4fi-ddFwEp91W8k1-uzLOSa-u38k_SE05M3ttRCOXARXuNWDUTExwYvLc8pFldNE9VyEO320SxSmTN_-RuVLnxZ2MU_gMomHhCv6sTP_jsiskgHlkib8QB4wO5o4=")
+    API_ID = int(os.environ.get("API_ID", '26225405'))
+    API_HASH = os.environ.get("API_HASH", "2d2fac6c811955f82aee8e3376a44197")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6249769746:AAGBjYJBLyOJhDQCE1E2iD3oBlhmM83Oq24")     
+    SESSION = os.environ.get("SESSION_STRING", "BQC2iQp4tZzomPYs4QcQyc7Y5UYHy9bVPWMPq9Oi8HILFivebJs2lnuF1nzCwoiC954X3IdgGqdH9jVLhuJsH5AtTlZV5VEOP9Y2cx3-ll5zwZ92gyPSEgYha0bi150Z_aDmbRSsVmBo-_LLcHw5tqoKjfl9b6DO8rlu4CNmmnQe5bPvBFrw2RDV9NqVbF8FSfefuBOAMMdSo-HBAUbeV78JKLGVIBBS8v4kYY-KhWyBtAGy2FvyCQToAllOFXV5NswQrswfqcEiNChPKtbN7NnBOIsSW7KqLEO0oozYGMzGq7erfhcxwD3-nDVYWk2iPcTqJDBT61CRrsB2kRrIG6jCAAAAAWWk6iAA")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", "-1001657259154"))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001657259154")
+    CHAT = int(os.environ.get("CHAT", "-1001601024102"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001601024102")
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
